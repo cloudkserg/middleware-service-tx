@@ -4,6 +4,7 @@
  * @author Kirill Sergeev <cloudkserg11@gmail.com>
 */
 const blockchains = {
+    'nem': require('./signNem'),
     'waves': require('./signWaves')
   },
   _ = require('lodash');
