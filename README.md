@@ -29,6 +29,9 @@ Below is the expamle configuration:
 
 ```
 WAVES_SEED=3JfE6tjeT7PnpuDQKxiVNLn4TJUFhuMaaT5@foo0
+NEM_KEY=3JfE6tjeT7PnpuDQKxiVNLn4TJUFhuMaaT5@foo0
+ETH_KEY=3JfE6tjeT7PnpuDQKxiVNLn4TJUFhuMaaT5@foo0
+BITCOIN_KEY=3JfE6tjeT7PnpuDQKxiVNLn4TJUFhuMaaT5@foo0
 HTTP_ADMIN=/admin
 REST_PORT=8081
 
@@ -38,7 +41,10 @@ The options are presented below:
 
 | name | description|
 | ------ | ------ |
-| WAVES_SEED | pharse for waves seed
+| BITCOIN_KEY | private keys for account in bitcoin (format: address@key,address@key)
+| ETH_KEY | private keys for account in eth (format: address@key,address@key)
+| NEM_KEY | private keys for account in nem (format: address@key,address@key)
+| WAVES_SEED | seed phrases for account in waves (format: address@seed,address@seed)
 | HTTP_ADMIN | admin path for nodered or false (if not publish as default)
 | REST_PORT   | rest plugin port
 

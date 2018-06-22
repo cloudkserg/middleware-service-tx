@@ -23,6 +23,9 @@ const getKeys = (addrKeys) => {
 
 const path = require('path'),
   signKeys = {
+    nem: getKeys(process.env.NEM_KEY || ''),
+    eth: getKeys(process.env.ETH_KEY || ''),
+    bitcoin: getKeys(process.env.BITCOIN_KEY || ''),
     waves: getKeys(process.env.WAVES_SEED || '3JfE6tjeT7PnpuDQKxiVNLn4TJUFhuMaaT5@foo0') 
   },
   signingService = require('../services/signingService')(signKeys);
